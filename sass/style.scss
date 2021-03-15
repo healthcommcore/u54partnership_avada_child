@@ -8,4 +8,130 @@ Version:        1.0
 Text Domain:    Avada
 */
 
+/** FONTS **/
+$depot: "depot-new-web";
+$depot-cond: "depot-new-condensed-web";
+$sweet: "sweet-sans-pro";
 
+$lt: 300;
+$reg: 400;
+$med: 500;
+$semi: 600;
+$bold: 700;
+$body-size: 1.4rem;
+$body-height: 1.4 * $body-size;
+
+/** COLORS **/
+$dk-blue: #3C5EA0;
+$turq: #00B1FC;
+$dk-orange: #C35B2A;
+
+html {
+  font-size: 100% !important;
+}
+
+body {
+  line-height: $body-height !important;
+  font-size: $body-size !important;
+  font-weight: $reg !important;
+}
+
+.home #main {
+  padding-top: 0;
+}
+
+html.avada-is-100-percent-template #main.width-100 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+.post-content h3,
+h3 {
+  letter-spacing: -0.01em !important;
+}
+
+/** BANNER **/
+.fusion-header .fusion-logo {
+  margin-top: 0 !important;
+}
+
+.fusion-header-v4 .fusion-header {
+  padding: 20px !important;
+}
+
+/** MAIN MENU **/
+header {
+  .fusion-secondary-main-menu {
+    background-color: $dk-blue;
+  }
+}
+.avada-menu-highlight-style-bottombar.fusion-top-header:not(.fusion-header-layout-v6) {
+  .fusion-main-menu > ul > li > .fusion-bottombar-highlight::after {
+    border-top: $turq 8px solid !important;
+  }
+}
+body:not(.fusion-header-layout-v6).fusion-top-header {
+  .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
+    top: calc(50% + 0.9em) !important;
+  }
+}
+
+/** HOMEPAGE **/
+.fusion-title.homepage-title {
+  h1 {
+    font-size: 2.2em;
+    line-height: $body-height * 1.8 !important;
+    color: $dk-blue;
+    font-family: $depot-cond;
+    font-weight: $med;
+  }
+}
+
+.homepage-contentboxes {
+  .col-lg-4 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .content-box-wrapper {
+    min-height: 450px;
+    border: $turq 1px solid;
+    .heading {
+      background-color: $turq;
+      padding: 25px 0;
+      .heading-link {
+        float: none !important;
+      }
+      .content-box-heading {
+        font-size: 1.2em !important;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    .content-container,
+    .fusion-read-more-button {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .content-container {
+      color: $dk-blue !important;
+    }
+  }
+  .button-default {
+    background-color: #fff;
+    border-radius: unset;
+    border: $dk-orange 1px solid;
+    .fusion-button-text {
+      color: $dk-orange;
+      font-family: $depot-cond;
+      font-size: 1.9em;
+      font-weight: $med;
+    }
+  }
+}

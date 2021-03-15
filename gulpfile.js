@@ -33,7 +33,8 @@ const reload = () => {
 
 const watch = () => {
   browsersync.init({
-    proxy: "cimac.dr809.test"
+    proxy: "u54partnership.dr809.test",
+    browser: "firefox"
   });
   gulp.watch(dir.src, clean).on('change', browsersync.reload);
   /*

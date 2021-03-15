@@ -1,9 +1,10 @@
-/*
-Theme Name: Avada Child
-Description: Child theme for Avada theme
-Author: ThemeFusion
-Author URI: https://theme-fusion.com
-Template: Avada
-Version: 1.0.0
-Text Domain:  Avada
-*/
+/*!
+Theme Name:     Avada Child Theme
+Description:    Child theme for the Avada WP Theme
+Author:         Health Communication Core
+Author URI:     http://www.healthcommcore.org
+Template:       Avada
+Version:        1.0
+Text Domain:    Avada
+*/html{font-size:100%!important}body{line-height:1.96rem!important;font-size:1.4rem!important;font-weight:400!important}.home #main{padding-top:0}html.avada-is-100-percent-template #main.width-100{padding-left:0!important;padding-right:0!important}.post-content h3,h3{letter-spacing:-.01em!important}.fusion-header .fusion-logo{margin-top:0!important}.fusion-header-v4 .fusion-header{padding:20px!important}header .fusion-secondary-main-menu{background-color:#3c5ea0}.avada-menu-highlight-style-bottombar.fusion-top-header:not(.fusion-header-layout-v6) .fusion-main-menu>ul>li>.fusion-bottombar-highlight:after{border-top:8px solid #00b1fc!important}body:not(.fusion-header-layout-v6).fusion-top-header .fusion-main-menu>ul>li:not(.fusion-menu-item-button)>a.fusion-bottombar-highlight:not(.fusion-main-menu-icon):after{top:calc(50% + .9em)!important}.fusion-title.homepage-title h1{font-size:2.2em;line-height:3.528rem!important;color:#3c5ea0;font-family:depot-new-condensed-web;font-weight:500}.homepage-contentboxes .col-lg-4{padding-left:30px;padding-right:30px}.homepage-contentboxes .content-box-wrapper{min-height:450px;border:1px solid #00b1fc}.homepage-contentboxes .content-box-wrapper .heading{background-color:#00b1fc;padding:25px 0}.homepage-contentboxes .content-box-wrapper .heading .heading-link{float:none!important}.homepage-contentboxes .content-box-wrapper .heading .content-box-heading{font-size:1.2em!important;text-transform:uppercase;color:#fff;text-align:center}.homepage-contentboxes .content-box-wrapper .content-container,.homepage-contentboxes .content-box-wrapper .fusion-read-more-button{margin-left:10%;margin-right:10%}.homepage-contentboxes .content-box-wrapper .content-container{color:#3c5ea0!important}.homepage-contentboxes .button-default{background-color:#fff;border-radius:unset;border:1px solid #c35b2a}.homepage-contentboxes .button-default .fusion-button-text{color:#c35b2a;font-family:depot-new-condensed-web;font-size:1.9em;font-weight:500}
+/*# sourceMappingURL=maps/style.css.map */
