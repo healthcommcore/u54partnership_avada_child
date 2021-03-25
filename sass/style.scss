@@ -8,8 +8,7 @@ Version:        1.0
 Text Domain:    Avada
 */
 
-/** FONTS **/
-$depot: "depot-new-web";
+/** FONTS **/ $depot: "depot-new-web";
 $depot-cond: "depot-new-condensed-web";
 $sweet: "sweet-sans-pro";
 
@@ -18,14 +17,18 @@ $reg: 400;
 $med: 500;
 $semi: 600;
 $bold: 700;
+$heavy: 800;
 $body-size: 1.4rem;
-$body-height: 1.4 * $body-size;
+$body-height: 1.5 * $body-size;
 
 /** COLORS **/
 $dk-blue: #3C5EA0;
 $turq: #00B1FC;
 $dk-orange: #C35B2A;
 
+$h2-mg: 10px;
+
+/** GLOBAL **/
 html {
   font-size: 100% !important;
 }
@@ -45,17 +48,56 @@ html.avada-is-100-percent-template #main.width-100 {
   padding-right: 0 !important;
 }
 
-h1 {
+/** PAGES **/
+.post-content {
+  margin-right: 100px;
+  p {
+    margin-bottom: 36px !important;
+  }
+  a {
+    font-weight: $semi;
+  }
 }
 
-h2 {
+.avada-page-titlebar-wrapper {
+  border-top: $turq 24px solid;
+  margin-top: 5px;
+}
+
+.fusion-page-title-bar .fusion-page-title-row h1,
+h1 {
+  font-size: 2.3em !important;
+  font-weight: $semi;
+}
+
+#main h2 {
+  font-size: 1.7em !important;
+  line-height: $body-height * 1.4 !important;
+  border-bottom: $dk-blue 3px solid;
+  margin-left: - $h2-mg;
+  padding-left: $h2-mg;
 }
 
 .post-content h3,
 h3 {
+  font-style: normal;
+  font-size: 1.1em !important;
   letter-spacing: -0.01em !important;
+  text-transform: uppercase;
+  font-weight: $heavy !important;
+  margin-top: 0 !important;
+  margin-bottom: 4px !important;
 }
 
+/** Landing page **/
+.landing-page-title-bar {
+  .fusion-page-title-wrapper {
+    align-items: flex-end;
+    h1 {
+      margin-bottom: 18px;
+    }
+  }
+}
 /** BANNER **/
 .fusion-header .fusion-logo {
   margin-top: 0 !important;
@@ -69,6 +111,7 @@ h3 {
 header {
   .fusion-secondary-main-menu {
     background-color: $dk-blue;
+    border: none;
   }
 }
 .avada-menu-highlight-style-bottombar.fusion-top-header:not(.fusion-header-layout-v6) {
@@ -82,7 +125,18 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   }
 }
 
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a:hover {
+  color: #fff;
+}
+
+
 /** HOMEPAGE **/
+.home {
+  .post-content {
+    margin-right: 0;
+  }
+}
+
 .fusion-title.homepage-title {
   h1 {
     font-size: 2.2em;
@@ -91,6 +145,10 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     font-family: $depot-cond;
     font-weight: $med;
   }
+}
+
+.fusion-content-boxes-2 .heading .heading-link:hover .content-box-heading {
+  color: #fff !important;
 }
 
 .homepage-contentboxes {
@@ -121,6 +179,9 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     }
     .content-container {
       color: $dk-blue !important;
+    }
+    .fusion-read-more-button {
+      margin-bottom: 50px;
     }
   }
   .button-default {
