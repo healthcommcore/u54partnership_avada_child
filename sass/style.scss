@@ -27,6 +27,7 @@ $turq: #00B1FC;
 $dk-orange: #C35B2A;
 
 $h2-mg: 10px;
+$p-mb: 36px;
 
 /** GLOBAL **/
 html {
@@ -52,7 +53,7 @@ html.avada-is-100-percent-template #main.width-100 {
 .post-content {
   margin-right: 100px;
   p {
-    margin-bottom: 36px !important;
+    margin-bottom: $p-mb !important;
   }
   a {
     font-weight: $semi;
@@ -76,10 +77,10 @@ h1 {
   border-bottom: $dk-blue 3px solid;
   margin-left: - $h2-mg;
   padding-left: $h2-mg;
+  margin-bottom: 10px;
 }
 
-.post-content h3,
-h3 {
+.post-content h3, h3 {
   font-style: normal;
   font-size: 1.1em !important;
   letter-spacing: -0.01em !important;
@@ -89,6 +90,18 @@ h3 {
   margin-bottom: 4px !important;
 }
 
+.post-content h3 + ul,
+.post-content h3 + ol,
+.fusion-title-size-two + ul, 
+.fusion-title-size-two + ol, 
+h2 + ol, h2 + ul {
+  margin-top: 0;
+}
+
+ul, ol {
+  margin-top: -$p-mb;
+  padding-left: 60px;
+}
 /** Landing page **/
 .landing-page-title-bar {
   .fusion-page-title-wrapper {
@@ -125,6 +138,7 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   }
 }
 
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li.current-menu-item a,
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li a:hover {
   color: #fff;
 }
@@ -196,3 +210,40 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     }
   }
 }
+
+/** FOOTER **/
+
+footer .widget_custom_html.footer-menu-and-legal {
+    text-align: right;
+	  color: #fff;
+}
+
+footer .widget_custom_html.footer-menu-and-legal a {
+    text-decoration: underline;
+	  color: #fff;
+}
+
+.footer-menu-and-legal .footer-menu {
+    float: right;
+}
+.footer-menu-and-legal .footer-menu li {
+    float: left;
+    padding: 0 10px;
+    border-right: #fff 1px solid;
+}
+
+.footer-menu-and-legal .footer-menu li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+footer .widget_custom_html.footer-menu-and-legal .footer-menu a {
+    font-size: 1.1rem;
+}
+
+footer .widget_custom_html.footer-menu-and-legal .footer-legal{
+    font-size: 0.8em;
+}
+footer .widget_custom_html.footer-menu-and-legal .footer-legal a{
+    font-size: 1.0em;
+} 
