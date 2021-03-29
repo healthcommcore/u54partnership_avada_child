@@ -49,68 +49,6 @@ html.avada-is-100-percent-template #main.width-100 {
   padding-right: 0 !important;
 }
 
-/** PAGES **/
-.post-content {
-  margin-right: 100px;
-  p {
-    margin-bottom: $p-mb !important;
-  }
-  a {
-    font-weight: $semi;
-  }
-}
-
-.avada-page-titlebar-wrapper {
-  border-top: $turq 24px solid;
-  margin-top: 5px;
-}
-
-.fusion-page-title-bar .fusion-page-title-row h1,
-h1 {
-  font-size: 2.3em !important;
-  font-weight: $semi;
-}
-
-#main h2 {
-  font-size: 1.7em !important;
-  line-height: $body-height * 1.4 !important;
-  border-bottom: $dk-blue 3px solid;
-  margin-left: - $h2-mg;
-  padding-left: $h2-mg;
-  margin-bottom: 10px;
-}
-
-.post-content h3, h3 {
-  font-style: normal;
-  font-size: 1.1em !important;
-  letter-spacing: -0.01em !important;
-  text-transform: uppercase;
-  font-weight: $heavy !important;
-  margin-top: 0 !important;
-  margin-bottom: 4px !important;
-}
-
-.post-content h3 + ul,
-.post-content h3 + ol,
-.fusion-title-size-two + ul, 
-.fusion-title-size-two + ol, 
-h2 + ol, h2 + ul {
-  margin-top: 0;
-}
-
-ul, ol {
-  margin-top: -$p-mb;
-  padding-left: 60px;
-}
-/** Landing page **/
-.landing-page-title-bar {
-  .fusion-page-title-wrapper {
-    align-items: flex-end;
-    h1 {
-      margin-bottom: 18px;
-    }
-  }
-}
 /** BANNER **/
 .fusion-header .fusion-logo {
   margin-top: 0 !important;
@@ -152,7 +90,7 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   line-height: 1.3em !important;
 }
 
-.fusion-main-menu .fusion-dropdown-menu .sub-menu li.current-menu-item a,
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li.current-menu-item > a,
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li a:hover {
   color: #fff;
 }
@@ -262,6 +200,92 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     background: $dk-orange !important;
   }
 }
+
+/** PAGES **/
+.post-content {
+  margin-right: 100px;
+  p {
+    margin-bottom: $p-mb !important;
+  }
+  a {
+    font-weight: $semi;
+  }
+}
+
+.avada-page-titlebar-wrapper {
+  border-top: $turq 24px solid;
+  margin-top: 5px;
+}
+
+.fusion-page-title-bar .fusion-page-title-row h1,
+h1 {
+  font-size: 2.3em !important;
+  font-weight: $semi;
+}
+
+#main h2 {
+  font-size: 1.7em !important;
+  line-height: $body-height * 1.4 !important;
+  border-bottom: $dk-blue 3px solid;
+  margin-left: - $h2-mg;
+  padding-left: $h2-mg;
+  margin-bottom: 10px;
+}
+
+.post-content h3, h3 {
+  font-style: normal;
+  font-size: 1.1em !important;
+  letter-spacing: -0.01em !important;
+  text-transform: uppercase;
+  font-weight: $heavy !important;
+  margin-top: 0 !important;
+  margin-bottom: 4px !important;
+}
+
+.post-content h3 + ul,
+.post-content h3 + ol,
+.fusion-title-size-two + ul, 
+.fusion-title-size-two + ol, 
+h2 + ol, h2 + ul {
+  margin-top: 0;
+}
+
+ul, ol {
+  margin-top: -$p-mb;
+  padding-left: 60px;
+}
+
+/** Landing page **/
+.landing-page-title-bar {
+  .fusion-page-title-wrapper {
+    align-items: flex-end;
+    h1 {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+/** Team page **/
+.staff-category-row {
+  margin-top: 60px !important;
+  margin-bottom: 80px !important;
+}
+
+.staff-container {
+  .staff-text-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    .staff-name {
+      font-weight: bold;
+      font-size: 1.06em;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
 
 /** FOOTER **/
 
