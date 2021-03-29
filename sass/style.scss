@@ -132,10 +132,24 @@ header {
     border-top: $turq 8px solid !important;
   }
 }
+
 body:not(.fusion-header-layout-v6).fusion-top-header {
   .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
     top: calc(50% + 0.9em) !important;
   }
+}
+
+.avada-menu-highlight-style-bottombar .fusion-main-menu .sub-menu {
+  border-top: none !important;
+}
+
+.fusion-main-menu ul > li > a {
+  font-size: 1.0em !important;
+}
+
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a {
+  font-size: 1.1rem !important;
+  line-height: 1.3em !important;
 }
 
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li.current-menu-item a,
@@ -151,6 +165,12 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   }
 }
 
+.homepage-headline-container {
+  margin-bottom: 60px !important;
+  margin-top: 14px !important;
+}
+
+
 .fusion-title.homepage-title {
   h1 {
     font-size: 2.2em;
@@ -161,8 +181,27 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   }
 }
 
+.homepage-list {
+  margin-top: 50px;
+  margin-left: 15%;
+  width: 850px;
+  font-size: 1.12em;
+  li {
+    margin-bottom: 14px;
+  }
+}
+
 .fusion-content-boxes-2 .heading .heading-link:hover .content-box-heading {
   color: #fff !important;
+}
+
+.fusion-content-boxes.content-boxes-clean-horizontal {
+  .col {
+    padding: 0 !important;
+  }
+  .content-box-column {
+    border-right-width: 40px !important;
+  }
 }
 
 .homepage-contentboxes {
@@ -171,7 +210,10 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     padding-right: 30px;
   }
   .content-box-wrapper {
-    min-height: 450px;
+    //min-height: 535px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
     border: $turq 1px solid;
     .heading {
       background-color: $turq;
@@ -188,14 +230,20 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     }
     .content-container,
     .fusion-read-more-button {
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: 10% !important;
+      margin-right: 10% !important;
     }
     .content-container {
+      flex-grow: 1;
+      margin-top: 10px;
+      margin-bottom: 12px;
       color: $dk-blue !important;
+      p {
+        margin-bottom: 10px !important;
+      }
     }
     .fusion-read-more-button {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
   }
   .button-default {
@@ -207,7 +255,11 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
       font-family: $depot-cond;
       font-size: 1.9em;
       font-weight: $med;
+      line-height: 1.08em;
     }
+  }
+  .button-default:hover {
+    background: $dk-orange !important;
   }
 }
 
