@@ -119,6 +119,17 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   }
 }
 
+#main {
+  .homepage-announcements {
+    h2 {
+      border-bottom: none;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 2.1em !important;
+    }
+  }
+}
+
 .homepage-list {
   margin-top: 50px;
   margin-left: 15%;
@@ -126,6 +137,18 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   font-size: 1.12em;
   li {
     margin-bottom: 14px;
+  }
+}
+
+.homepage-announcements {
+  .fusion-title {
+    margin-bottom: 60px !important;
+    .title-sep-container {
+      height: 0;
+    }
+    .title-sep.sep-single {
+      border-bottom-width: 3px;
+    }
   }
 }
 
@@ -212,6 +235,13 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   }
 }
 
+.post-content {
+  .indent p {
+    margin-bottom: 0 !important;
+    margin-left: 60px;
+  }
+}
+
 .avada-page-titlebar-wrapper {
   border-top: $turq 24px solid;
   margin-top: 5px;
@@ -221,6 +251,11 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
 h1 {
   font-size: 2.3em !important;
   font-weight: $semi;
+  line-height: 1.1em !important;
+}
+
+.fusion-page-title-row {
+  height: auto !important;
 }
 
 #main h2 {
