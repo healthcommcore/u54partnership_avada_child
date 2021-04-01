@@ -92,6 +92,7 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
 }
 
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li.current-menu-item > a,
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li.current-menu-ancestor > a,
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li a:hover {
   color: #fff;
 }
