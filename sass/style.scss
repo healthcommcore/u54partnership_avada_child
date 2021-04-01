@@ -252,6 +252,7 @@ h1 {
   font-size: 2.3em !important;
   font-weight: $semi;
   line-height: 1.1em !important;
+  margin-top: 50px;
 }
 
 .fusion-page-title-row {
@@ -291,11 +292,19 @@ ul, ol {
 }
 
 /** Landing page **/
+.landing-page-title-bar.fusion-page-title-bar {
+  display: flex;
+  align-items: end;
+}
+
 .landing-page-title-bar {
+  .fusion-page-title-row {
+    flex: 1 1 auto;
+  }
   .fusion-page-title-wrapper {
-    align-items: flex-end;
     h1 {
       margin-bottom: 18px;
+      margin-top: 0;
     }
   }
 }
