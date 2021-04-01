@@ -25,6 +25,7 @@ $body-height: 1.5 * $body-size;
 $dk-blue: #3C5EA0;
 $turq: #00B1FC;
 $dk-orange: #C35B2A;
+$orange-brown: #bc7756;
 
 $h2-mg: 10px;
 $p-mb: 36px;
@@ -329,7 +330,29 @@ ul, ol {
   }
 }
 
+/** Accordions **/
+.fusion-accordian {
+  .fusion-panel {
+    border: $orange-brown 1px solid !important;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+}
 
+.fusion-accordian.abstract-accordion {
+  margin-top: -20px;
+  margin-bottom: $p-mb;
+  .fusion-panel {
+    border: none !important;
+    padding: 0;
+  }
+  .panel-heading {
+    border: $orange-brown 1px solid;
+    padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px !important;
+  }
+}
 
 /** FOOTER **/
 
