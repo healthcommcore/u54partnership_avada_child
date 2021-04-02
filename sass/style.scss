@@ -218,6 +218,12 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     .fusion-read-more-button {
       margin-bottom: 40px;
     }
+    .fusion-read-more-button:hover {
+      text-decoration: none;
+      .fusion-button-text {
+        color: #fff;
+      }
+    }
   }
   .button-default {
     background-color: #fff;
