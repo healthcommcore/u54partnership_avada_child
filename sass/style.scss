@@ -18,8 +18,8 @@ $med: 500;
 $semi: 600;
 $bold: 700;
 $heavy: 800;
-$body-size: 1.4rem;
-$body-height: 1.5 * $body-size;
+$body-size: 1.2rem;
+$body-height: 1.6 * $body-size;
 
 /** COLORS **/
 $dk-blue: #3C5EA0;
@@ -29,6 +29,7 @@ $orange-brown: #bc7756;
 
 $h2-mg: 10px;
 $p-mb: 36px;
+$title-margin: 5px;
 
 /** GLOBAL **/
 html {
@@ -74,7 +75,7 @@ header {
 
 body:not(.fusion-header-layout-v6).fusion-top-header {
   .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
-    top: calc(50% + 0.9em) !important;
+    top: calc(50% + 0.8em) !important;
   }
 }
 
@@ -83,7 +84,7 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
 }
 
 .fusion-main-menu ul > li > a {
-  font-size: 1.0em !important;
+  font-size: 1.3em !important;
 }
 
 .fusion-main-menu .fusion-dropdown-menu .sub-menu li a {
@@ -121,13 +122,22 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   }
 }
 
-#main {
+#wrapper #main {
   .homepage-announcements {
     h2 {
       border-bottom: none;
       padding-left: 30px;
       padding-right: 30px;
-      font-size: 2.1em !important;
+      font-size: 2.3em !important;
+    }
+  }
+}
+
+.post-content {
+  .homepage-announcements {
+    h3 {
+      font-size: 1.16em !important;
+      line-height: 1.2em !important;
     }
   }
 }
@@ -136,7 +146,7 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
   margin-top: 50px;
   margin-left: 15%;
   width: 850px;
-  font-size: 1.12em;
+  font-size: 1.25em;
   li {
     margin-bottom: 14px;
   }
@@ -233,7 +243,8 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     margin-bottom: $p-mb !important;
   }
   a {
-    font-weight: $semi;
+    font-weight: $med;
+    text-decoration: underline;
   }
 }
 
@@ -246,12 +257,12 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
 
 .avada-page-titlebar-wrapper {
   border-top: $turq 24px solid;
-  margin-top: 5px;
+  margin-top: $title-margin;
 }
 
 .fusion-page-title-bar .fusion-page-title-row h1,
 h1 {
-  font-size: 2.3em !important;
+  font-size: 2.7em !important;
   font-weight: $semi;
   line-height: 1.1em !important;
   margin-top: 50px;
@@ -261,13 +272,14 @@ h1 {
   height: auto !important;
 }
 
-#main h2 {
-  font-size: 1.7em !important;
+#wrapper #main h2 {
+  font-size: 1.8em !important;
   line-height: $body-height * 1.4 !important;
-  border-bottom: $dk-blue 3px solid;
-  margin-left: - $h2-mg;
+  border-bottom: $dk-blue 2px solid;
+  margin-left: - $h2-mg !important;
   padding-left: $h2-mg;
   margin-bottom: 10px;
+  font-weight: $reg;
 }
 
 .post-content h3, h3 {
@@ -275,9 +287,9 @@ h1 {
   font-size: 1.1em !important;
   letter-spacing: -0.01em !important;
   text-transform: uppercase;
-  font-weight: $heavy !important;
+  font-weight: $semi !important;
   margin-top: 0 !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 0 !important;
 }
 
 .post-content h3 + ul,
@@ -297,6 +309,7 @@ ul, ol {
 .landing-page-title-bar.fusion-page-title-bar {
   display: flex;
   align-items: end;
+  margin-top: $title-margin;
 }
 
 .landing-page-title-bar {
@@ -338,7 +351,16 @@ ul, ol {
     padding: 0 20px;
     margin-bottom: 20px;
   }
+  .panel-heading a {
+    font-family: $depot-cond !important;
+    font-weight: $reg !important;
+    font-size: 1.8em !important;
+  }
+  .fa-fusion-box {
+    margin-top: -8px;
+  }
 }
+
 
 .fusion-accordian.abstract-accordion {
   margin-top: -20px;
