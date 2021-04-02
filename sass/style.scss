@@ -252,6 +252,9 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
     font-weight: $med;
     text-decoration: underline;
   }
+  em {
+    font-style: italic;
+  }
 }
 
 .post-content {
