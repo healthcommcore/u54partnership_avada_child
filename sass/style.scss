@@ -251,6 +251,12 @@ body:not(.fusion-header-layout-v6).fusion-top-header {
 
 /** PAGES **/
 
+.home.page-template-100-width {
+  #wrapper #main .fullwidth-box .fusion-row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 .page-template-100-width {
   #wrapper #main .fullwidth-box .fusion-row {
     padding-left: 30px !important;
