@@ -8,7 +8,8 @@ Version:        1.0
 Text Domain:    Avada
 */
 
-/** FONTS **/ $depot: "depot-new-web";
+/** FONTS **/ 
+$depot: "depot-new-web";
 $depot-cond: "depot-new-condensed-web";
 $sweet: "sweet-sans-pro";
 
@@ -527,6 +528,16 @@ ul, ol {
 
 .partnership-accomplishments-asterisk-margin {
   margin-left: 60px;
+}
+
+/**Cancer health equity chart **/
+.cancer-equity-chart-sources {
+  margin-top: 30px;
+  padding-left: 30px;
+  font-size: 1.2rem;
+  line-height: 1.3em;
+  color: $dk-blue;
+  font-family: $depot;
 }
 
 /** Partnership structure **/
