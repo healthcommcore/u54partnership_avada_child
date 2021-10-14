@@ -1,0 +1,550 @@
+@import './variables.scss';
+
+/** GLOBAL **/
+html {
+  font-size: 100% !important;
+}
+
+body {
+  line-height: $body-height !important;
+  font-size: $body-size !important;
+  font-weight: $reg !important;
+}
+
+.home #main {
+  padding-top: 0;
+}
+
+html.avada-is-100-percent-template #main.width-100 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/** BANNER **/
+.fusion-header .fusion-logo {
+  margin-top: 0 !important;
+}
+
+.fusion-header-v4 .fusion-header {
+  padding: 20px !important;
+}
+
+/** MAIN MENU **/
+header {
+  .fusion-secondary-main-menu {
+    background-color: $dk-blue;
+    border: none;
+  }
+}
+.avada-menu-highlight-style-bottombar.fusion-top-header:not(.fusion-header-layout-v6) {
+  .fusion-main-menu > ul > li > .fusion-bottombar-highlight::after {
+    border-top: $turq 8px solid !important;
+  }
+}
+
+body:not(.fusion-header-layout-v6).fusion-top-header {
+  .fusion-main-menu > ul > li:not(.fusion-menu-item-button) > a.fusion-bottombar-highlight:not(.fusion-main-menu-icon)::after {
+    top: calc(50% + 0.8em) !important;
+  }
+}
+
+.avada-menu-highlight-style-bottombar .fusion-main-menu .sub-menu {
+  border-top: none !important;
+}
+
+.fusion-main-menu ul > li > a {
+  font-size: 1.3em !important;
+}
+
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a {
+  font-size: 1.1rem !important;
+  line-height: 1.3em !important;
+}
+
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li.current-menu-item > a,
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li.current-menu-ancestor > a,
+.fusion-main-menu .fusion-dropdown-menu .sub-menu li a:hover {
+  color: #fff;
+}
+
+
+/** HOMEPAGE **/
+.home {
+  .post-content {
+    margin-right: 0;
+  }
+}
+
+.homepage-headline-container {
+  margin-bottom: 60px !important;
+  margin-top: 14px !important;
+}
+
+
+.fusion-title.homepage-title {
+  h1 {
+    font-size: 2.2em;
+    line-height: $body-height * 1.8 !important;
+    color: $dk-blue;
+    font-family: $depot-cond;
+    font-weight: $med;
+  }
+}
+
+#wrapper #main {
+  .homepage-announcements {
+    h2 {
+      border-bottom: none;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 2.3em !important;
+    }
+  }
+}
+
+.post-content {
+  .homepage-announcements {
+    h3 {
+      font-size: 1.16em !important;
+      line-height: 1.2em !important;
+    }
+  }
+}
+
+.homepage-list {
+  margin-top: 50px;
+  margin-left: 15%;
+  width: 850px;
+  font-size: 1.25em;
+  li {
+    margin-bottom: 14px;
+  }
+}
+
+.homepage-announcements {
+  .fusion-title {
+    margin-bottom: 60px !important;
+    .title-sep-container {
+      height: 0;
+    }
+    .title-sep.sep-single {
+      border-bottom-width: 3px;
+    }
+  }
+}
+
+.fusion-content-boxes-2 .heading .heading-link:hover .content-box-heading {
+  color: #fff !important;
+}
+
+.fusion-content-boxes.content-boxes-clean-horizontal {
+  .col {
+    padding: 0 !important;
+  }
+  .content-box-column {
+    border-right-width: 40px !important;
+  }
+}
+
+.homepage-contentboxes {
+  .col-lg-4 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .content-box-wrapper {
+    //min-height: 535px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    border: $turq 1px solid;
+    .heading {
+      background-color: $turq;
+      padding: 25px 0;
+      .heading-link {
+        float: none !important;
+      }
+      .content-box-heading {
+        font-size: 1.2em !important;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    .content-container,
+    .fusion-read-more-button {
+      margin-left: 10% !important;
+      margin-right: 10% !important;
+    }
+    .content-container {
+      flex-grow: 1;
+      margin-top: 10px;
+      margin-bottom: 12px;
+      color: $dk-blue !important;
+      p {
+        margin-bottom: 10px !important;
+      }
+    }
+    .fusion-read-more-button {
+      margin-bottom: 40px;
+    }
+    .fusion-read-more-button:hover {
+      text-decoration: none;
+      .fusion-button-text {
+        color: #fff;
+      }
+    }
+  }
+  .button-default {
+    background-color: #fff;
+    border-radius: unset;
+    border: $dk-orange 1px solid;
+    .fusion-button-text {
+      color: $dk-orange;
+      font-family: $depot-cond;
+      font-size: 1.9em;
+      font-weight: $med;
+      line-height: 1.08em;
+    }
+  }
+  .button-default:hover {
+    background: $dk-orange !important;
+  }
+}
+
+/** PAGES **/
+
+.home.page-template-100-width {
+  #wrapper #main .fullwidth-box .fusion-row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.page-template-100-width {
+  #wrapper #main .fullwidth-box .fusion-row {
+    padding-left: 30px !important;
+    padding-right: $content-margin !important;
+  }
+}
+.page-template-default,
+.page-template-page-landing {
+  .post-content {
+    margin-right: $content-margin;
+  }
+}
+
+.post-content {
+  p {
+    margin-bottom: $p-mb !important;
+  }
+  a {
+    font-weight: $med;
+    text-decoration: underline;
+  }
+  em {
+    font-style: italic;
+  }
+}
+
+.post-content {
+  .indent p {
+    margin-bottom: 0 !important;
+    margin-left: 60px;
+  }
+}
+
+.avada-page-titlebar-wrapper {
+  border-top: $turq 24px solid;
+  margin-top: $title-margin;
+}
+
+.fusion-page-title-bar .fusion-page-title-row h1,
+h1 {
+  font-size: 2.7em !important;
+  font-weight: $semi;
+  line-height: 1.1em !important;
+  margin-top: 50px;
+}
+
+.fusion-page-title-row {
+  height: auto !important;
+}
+
+#wrapper #main h2 {
+  font-size: 1.8em !important;
+  line-height: $body-height * 1.4 !important;
+  border-bottom: $dk-blue 2px solid;
+  margin-left: - $h2-mg !important;
+  padding-left: $h2-mg;
+  margin-bottom: 10px;
+  font-weight: $reg;
+}
+
+.post-content h3, h3 {
+  font-style: normal;
+  font-size: 1.1em !important;
+  letter-spacing: -0.01em !important;
+  text-transform: uppercase;
+  font-weight: $semi !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.post-content h3 + ul,
+.post-content h3 + ol,
+.fusion-title-size-two + ul, 
+.fusion-title-size-two + ol, 
+.wsp-container ul,
+h2 + ol, h2 + ul {
+  margin-top: 0;
+}
+
+ul, ol {
+  margin-top: -$p-mb;
+  padding-left: 60px;
+}
+
+/** Landing page **/
+.landing-page-title-bar.fusion-page-title-bar {
+  display: flex;
+  align-items: flex-end;
+  margin-top: $title-margin;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.landing-page-title-bar {
+  .fusion-page-title-row {
+    flex: 1 1 auto;
+  }
+  .fusion-page-title-wrapper {
+    h1 {
+      margin-bottom: 18px;
+      margin-top: 0;
+    }
+  }
+}
+
+/** Team page **/
+.staff-category-row {
+  margin-top: 60px !important;
+  margin-bottom: 80px !important;
+}
+
+.staff-container {
+  .staff-text-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    .staff-name {
+      font-weight: bold;
+      font-size: 1.06em;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/** Accordions **/
+.fusion-accordian {
+  .fusion-panel {
+    border: $orange-brown 1px solid !important;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .panel-heading a {
+    font-family: $depot-cond !important;
+    font-weight: $reg !important;
+    font-size: 1.8em !important;
+  }
+  .fa-fusion-box {
+    margin-top: -8px;
+  }
+}
+
+
+.fusion-accordian.abstract-accordion {
+  margin-top: -20px;
+  margin-bottom: $p-mb;
+  .fusion-panel {
+    border: none !important;
+    padding: 0;
+  }
+  .panel-heading {
+    border: $orange-brown 1px solid;
+    padding: 0 20px;
+    display: inline-block;
+    padding: 0 20px !important;
+  }
+}
+
+/** Quote **/
+.fusion-body {
+  .quote-container {
+    .fusion-builder-column-15 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.quote-container {
+  background-color: $lt-blue !important;
+  margin-top: 30px !important;
+  margin-bottom: 60px !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  .quote-text {
+    font-family: $depot;
+    font-size: 1.7rem !important;
+    line-height: 150% !important;
+    color: $dk-turq;
+    font-style: italic;
+    font-weight: $thin !important;
+    border-left: $med-blue 27px solid;
+    padding-left: 50px;
+    p:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+/** Special callout **/
+.fusion-body {
+  .fusion-builder-column-8.special-callout {
+    margin: 40px 0;
+  }
+}
+
+.special-callout {
+  background-color: $lt-blue;
+  .fusion-column-wrapper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .fusion-content-boxes.fusion-columns-1 .fusion-column {
+    margin-bottom: 50px;
+  }
+}
+.post-content {
+  .special-callout {
+    .fusion-title {
+      background-color: $dk-blue;
+      margin-top: 0 !important;
+      padding: 16px 0;
+      h3 {
+        color: #fff !important;
+        font-size: 1.7rem !important;
+      }
+    }
+  }
+}
+
+/** Timeline **/
+
+.partnership-timeline {
+  width: 90%;
+  margin: 30px auto;
+  .heading {
+    margin-top: 0 !important;
+  }
+  .content-container {
+    color: $dk-blue !important;
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+/** Partnership history **/
+.partnership-history.fusion-content-boxes.content-boxes-timeline-vertical {
+  .content-box-column > .col {
+    position: relative;
+    display: flex;
+  }
+}
+.partnership-history {
+  .content-container {
+    padding-left: 30px !important;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/** Partnership accomplishments **/
+.partnership-accomplishments.fusion-content-boxes.content-boxes-timeline-vertical .heading-with-icon {
+  margin-bottom: 0;
+  h3 {
+    text-transform: none;
+    font-size: 1.8rem !important;
+  }
+  .image {
+    margin-right: 20px;
+  }
+}
+.partnership-accomplishments {
+  .content-container {
+    margin-top: -10px;
+    padding-left: 133px !important;
+  }
+}
+
+.partnership-accomplishments-asterisk-margin {
+  margin-left: 60px;
+}
+
+/**Cancer health equity chart **/
+.cancer-equity-chart-sources {
+  margin-top: 30px;
+  padding-left: 30px;
+  font-size: 1.2rem;
+  line-height: 1.3em;
+  color: $dk-blue;
+  font-family: $depot;
+}
+
+/** Partnership structure **/
+.special-graphic-margin {
+  margin: 60px auto;
+}
+
+/** Core pages **/
+.halfwidth-image-margin {
+  margin-bottom: 50px;
+}
+
+/** FOOTER **/
+
+footer .widget_custom_html.footer-menu-and-legal {
+    text-align: right;
+	  color: #fff;
+}
+
+footer .widget_custom_html.footer-menu-and-legal a {
+    text-decoration: underline;
+	  color: #fff;
+}
+
+.footer-menu-and-legal .footer-menu {
+    float: right;
+}
+.footer-menu-and-legal .footer-menu li {
+    float: left;
+    padding: 0 10px;
+    border-right: #fff 1px solid;
+}
+
+.footer-menu-and-legal .footer-menu li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+footer .widget_custom_html.footer-menu-and-legal .footer-menu a {
+    font-size: 1.1rem;
+}
+
+footer .widget_custom_html.footer-menu-and-legal .footer-legal{
+    font-size: 0.8em;
+}
+footer .widget_custom_html.footer-menu-and-legal .footer-legal a{
+    font-size: 1.0em;
+} 
+

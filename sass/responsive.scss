@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+@media (max-width: 640px) {
+  /* Homepage */
+  .fusion-title.homepage-title {
+    h1 {
+      font-size: 1.5em !important;
+      line-height: $body-height * 1.7 !important;
+    }
+  }
+}
