@@ -1,6 +1,25 @@
 @import './variables.scss';
 
 @media (max-width: 800px) {
+  // GLOBAL 
+  #wrapper #main h2 {
+    line-height: 1em !important;
+    padding-bottom: 5px;
+  }
+  ul, ol {
+    padding-left: 40px;
+  }
+  .fusion-page-title-bar .fusion-page-title-row h1,
+  h1 {
+    font-size: 2.3em !important;
+    margin-top: 20px;
+    line-height: 1.0em !important;
+  }
+  #main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   // HEADER
   .fusion-header-wrapper {
     border-bottom: $dk-blue 10px solid;
@@ -97,6 +116,29 @@
       .fusion-read-more {
         float: none !important;
       }
+    }
+  }
+
+  // LANDING PAGE
+  .landing-page-title-bar.fusion-page-title-bar {
+    background-image: url('images/title_bkgrd_mobile.svg');
+  }
+  .fusion-body:not(.avada-has-page-title-mobile-height-auto) .fusion-page-title-row {
+    align-items: end;
+  }
+  .landing-page-title-bar {
+    .fusion-page-title-wrapper {
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // GLOBAL PAGE
+  .page-template-default,
+  .page-template-page-landing {
+    .post-content {
+      margin-right: 0;
     }
   }
 

@@ -64,9 +64,11 @@ $wrapper_class .= ( is_page_template( 'blank.php' ) ) ? ' wrapper_blank' : '';
 		<?php if ( has_action( 'avada_override_current_page_title_bar' ) ) : ?>
 			<?php do_action( 'avada_override_current_page_title_bar', $c_page_id ); ?>
 		<?php else : ?>
-    <?php $id = get_post_thumbnail_id($post); ?>
-    <?php $bkgrd_img = wp_get_attachment_url($id); ?>
-			<div class="landing-page-title-bar fusion-page-title-bar" style="background-image: url('<?php echo $bkgrd_img; ?>')">
+    <?php //$id = get_post_thumbnail_id($post); ?>
+    <?php //$bkgrd_img = wp_get_attachment_url($id); ?>
+    <!--
+			<div class="landing-page-title-bar fusion-page-title-bar" style="background-image: url('<?php //echo $bkgrd_img; ?>')">
+    -->
         <div class="fusion-page-title-row">
           <div class="fusion-page-title-wrapper">
             <h1 class="entry-title"><?php the_title() ?></h1>
